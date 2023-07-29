@@ -66,7 +66,7 @@ public String addUser(String name, String password, String confPassword){
     String ePass = bCrypt.encode(confPassword);
     user.setPassword(ePass);
     repository.save(user);
-    return user.getUserName()+" is added succesfully";
+    return user.getUserName()+" is added succesfully. Please go back and login";
     }
     return "Passwords dont match";
     
